@@ -46,13 +46,13 @@ insert  into `buku`(`kode_buku`,`judul`,`penulis`,`id_penerbit`,`id_kategori`,`t
 ('B00005','Python Untuk Big Data & Machine Learning','Abdul Khaidar','PN0003','1',2018,98000,17),
 ('B00006','Database MySQL Untuk Pemula','Rumini','PN0004','1',2020,40000,35),
 ('B00007','Algoritma Kecerdasan Buatan','Eka Pujianti','PN0005','1',2019,69000,10),
-('B00008','The Secret Scroll Of Fighting: Naruto Character Official Data Book','Masashi Kishimoto',NULL,'4',2017,40000,7),
-('B00009','Boruto - Naruto Next Generation Vol. 8','Masashi Kishimoto',NULL,'4',2021,40000,18),
-('B00010','Rahasia Sulap Paman Dino','Iwok Abqari',NULL,'4',2019,37000,5),
-('B00011','Antropologi Kesehatan Untuk Keperawatan','AWAN HARIANTO DKK',NULL,'3',2020,60000,4),
-('B00012','Healthy Menu Untuk Penderita Penyakit Jantung','Khusnul Khotimah',NULL,'3',2018,51000,0),
-('B00013','Arah langkah','Fiersa Besari',NULL,'4',2018,88000,11),
-('B00014','Sains Terkini : Ddotty & Sleepground - Rekayasa Genetika','BYEON HYERYEONG/CHOI WOOBIN',NULL,'2',2020,95000,13);
+('B00008','The Secret Scroll Of Fighting: Naruto Character Official Data Book','Masashi Kishimoto','PN0001','4',2017,40000,7),
+('B00009','Boruto - Naruto Next Generation Vol. 8','Masashi Kishimoto','PN0001','4',2021,40000,18),
+('B00010','Rahasia Sulap Paman Dino','Iwok Abqari','PN0001','4',2019,37000,5),
+('B00011','Antropologi Kesehatan Untuk Keperawatan','AWAN HARIANTO DKK','PN0006','3',2020,60000,4),
+('B00012','Healthy Menu Untuk Penderita Penyakit Jantung','Khusnul Khotimah','PN0006','3',2018,51000,0),
+('B00013','Arah langkah','Fiersa Besari','PN0001','4',2018,88000,11),
+('B00014','Sains Terkini : Ddotty & Sleepground - Rekayasa Genetika','BYEON HYERYEONG/CHOI WOOBIN','PN0006','2',2020,95000,13);
 
 /*Table structure for table `detail_transaksi` */
 

@@ -8,7 +8,9 @@ SELECT * FROM nama_view;
 3.Replace atau perbarui VIEW 
 -> CREATE OR REPLACE VIEW nama_view AS [query];
 
-4.Menghapus VIEW -> DROP VIEW nama_view;
+4.Menghapus VIEW 
+-> DROP VIEW nama_view;
+-> DROP VIEW IF EXISTS nama_view;
 
 -- > Implementasi
 1.Menampilkan judul buku, nama penerbit, kategori, harga;

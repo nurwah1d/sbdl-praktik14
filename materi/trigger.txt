@@ -1,0 +1,22 @@
+TRIGGER - MYSQL
+-> Object di dalam database yang berhubungan langsung dengan tabel dan akan aktif apabila terdapat suatu kejadian (event) pada tabel tersebut.
+
+-> Kejadian (event): [BEFORE|AFTER] [INSERT|UPDATE|DELETE]
+
+-> Syntax:
+DELIMITER $$
+CREATE OR REPLACE TRIGGER nama_database.nama_trigger 
+[BEFORE|AFTER] [INSERT|UPDATE|DELETE] ON nama_database.nama_tabel
+FOR EACH ROW
+    BEGIN
+        [query];
+    END;
+$$
+
+-> Menghapus TRIGGER
+DROP TRIGGER IF EXIST nama_trigger;
+
+-> Atribut tambahan: NEW dan OLD
+COntoh: NEW.id_kasir
+log_aktifitas: tanggal, id_kasir, keterangan
+INSERT INTO log_transaksi VALUES (NOW(), NEW.id_kasir, "Tambah transaksi baru");

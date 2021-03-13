@@ -4,6 +4,13 @@ CREATE TABLE log_transaksi (
   keterangan VARCHAR(255)
 );
 
+CREATE TABLE `toko_buku`.`log_buku` ( 
+  `tanggal` DATETIME, 
+  `judul_buku` VARCHAR(255), 
+  `penulis` VARCHAR(255), 
+  `keterangan` VARCHAR(255) 
+; 
+
 -- TRIGGER log transaksi baru
 DELIMITER $$
 CREATE OR REPLACE TRIGGER tr_log_transaksi_baru
@@ -11,8 +18,8 @@ AFTER INSERT ON transaksi
 FOR EACH ROW
     BEGIN
         INSERT INTO log_transaksi VALUES (NOW(), NEW.id_kasir, "Transaksi baru");
-    END$$
-END;
+    END;
+$$
 
 SELECT * FROM kasir;
 SELECT * FROM log_transaksi;
@@ -34,8 +41,8 @@ SELECT * FROM log_buku;
 
 -- TRIGGER log hapus buku
 DELIMITER $$
-CREATE OR REPLACE TRIGGER tr_log_buku_dihapus
-AFTER DELETE ON buku
+CREATE OR REPLACE TRIGGER tr_log_buku_dihapus 
+AFTER DELETE ON buku 
 FOR EACH ROW
   BEGIN
     INSERT INTO log_buku VALUES (NOW(), OLD.judul, OLD.penulis, "Data buku dihapus");

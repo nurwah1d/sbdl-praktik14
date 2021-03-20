@@ -1,3 +1,4 @@
+Gunakan database 'swalayan' untuk menyelesaikan soal berikut!
 1. Buatlah user untuk pegawai dengan hak akses berikut:
    a. Manajer: SELECT [transaksi, detaik_transaksi, barang, supplier]
    b. Kasir: INSERT, UPDATE, DELETE [transaksi, detail_transaksi], SELECT [barang]

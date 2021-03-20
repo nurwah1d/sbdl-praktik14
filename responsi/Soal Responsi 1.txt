@@ -1,0 +1,15 @@
+1. Buatlah user untuk pegawai dengan hak akses berikut:
+   a. Manajer: SELECT [transaksi, detaik_transaksi, barang, supplier]
+   b. Kasir: INSERT, UPDATE, DELETE [transaksi, detail_transaksi], SELECT [barang]
+   c. Kepala gudang: SELECT [log_barang, barang, supplier]
+   d. Staff gudang: INSERT, UPDATE, DELETE [log_barang, barang, supplier]
+   e. Admin gudang: Akses penuh ke database
+
+2. 
+a) Buatlah tabel 'log_transaksi' yang menyimpan log aktivitas pada tabel transaksi baik itu tambah data, ubah data, serta hapus data, termasuk pegawai yang menangani dan waktu transaksi.
+b) Buatlah trigger untuk mengisi tabel 'log_transaksi'.
+
+3. Buatlah view untuk:
+a) Menampilkan tanggal transaksi, nama pegawai, nama member, total transaksi.
+b) Menampilkan tanggal, nama pegawai, nama barang, jumlah barang, dan status barang
+c) Menampilkan nama member dan total transaksi yang pernah dilakukan.
